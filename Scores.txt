@@ -1,0 +1,31 @@
+The scores you see in the topic modeling results (e.g., 0.072, 0.064, etc.) represent the weights of the respective words in each topic. These weights indicate the importance of each word within a particular topic, based on how often the word appears in relation to other words in the dataset.
+
+Here's a more detailed explanation of how these scores are calculated and what they mean:
+
+1. Term Frequency (TF):
+The frequency of a word in a document or dataset.
+
+Words that appear more frequently in a specific topic will have a higher score in that topic.
+
+2. Inverse Document Frequency (IDF):
+A measure of how common or rare a word is across all documents.
+
+Words that are rare across the entire dataset but frequent in a topic will have a higher weight, making them more relevant to that topic.
+
+3. Topic Modeling (e.g., Latent Dirichlet Allocation):
+The model analyzes the frequency and distribution of words across all documents.
+
+It then assigns probabilities (scores) to words within each topic. These scores reflect the relative importance of each word for that topic.
+
+For example:
+
+Topic 0 has the word "want" with a score of 0.072, meaning that the word "want" is the most important term in Topic 0 compared to other words, but its weight is not the highest in all topics.
+
+Topic 1 has the word "ui" with a score of 0.044, indicating its importance in Topic 1, but not as much as "want" in Topic 0.
+
+Interpretation:
+The higher the score, the more important the word is to that topic.
+
+These scores help the model characterize the topics by showing which words are most influential in defining each one.
+
+In summary, the scores are based on how frequently a word occurs in a particular topic, adjusted by how unique that word is across the entire dataset. This allows the topic model to highlight the most relevant words for each topic, reflecting the core themes of the data.
